@@ -9,8 +9,8 @@
         <module name="TheArtOfProgramming" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="TheArtOfProgramming" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="TheArtOfProgramming" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

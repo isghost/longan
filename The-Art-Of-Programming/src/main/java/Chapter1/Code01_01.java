@@ -39,42 +39,14 @@ public class Code01_01 {
     @Test
     public void resolve1() {
         char actuals[] = "abc123456789".toCharArray();
-        int m = 3;
-        char expecteds2[] = "123456789abc".toCharArray();
+        int m = 6;
+        char expecteds2[] = "456789abc123".toCharArray();
         assertArrayEquals(expecteds2, leftRotateString1(actuals, m));
     }
     //------------------------- 分割线 ------------------------------------------
 
     /**
-     * 直接平移法（我的方法）
+     * 直接平移法，未实现
      * 根据平移数量，算出每个字符的新位置，直接移动过去
      */
-    char [] leftRotateString2(char[] str, int m) {
-        char [] newStr = str.clone();
-        int n = newStr.length;
-        for(int i = 0;i<m;i++){
-            int index = i;
-            char tmpChar = newStr[index];
-            do {
-                // 将nextIndex上的字符移动到index
-                int nextIndex = (index + m + n) % n;
-                if (nextIndex == i) {
-                    newStr[index] = tmpChar;
-                } else {
-                    newStr[index] = newStr[nextIndex];
-                }
-                index = nextIndex;
-            } while (index != i);
-        }
-        return newStr;
-
-    }
-
-    @Test
-    public void resolve2() {
-        char actuals[] = "abc123456789".toCharArray();
-        int m = 3;
-        char expecteds2[] = "123456789abc".toCharArray();
-        assertArrayEquals(expecteds2, leftRotateString2(actuals, m));
-    }
 }
