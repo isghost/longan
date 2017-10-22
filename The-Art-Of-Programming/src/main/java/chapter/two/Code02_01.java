@@ -1,6 +1,5 @@
-package Chapter2;
+package chapter.two;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.*;

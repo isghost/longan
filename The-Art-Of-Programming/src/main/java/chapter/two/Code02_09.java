@@ -1,4 +1,4 @@
-package Chapter2;
+package chapter.two;
 
 /**
  * Created by isghost on 2017/10/12.
